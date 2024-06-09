@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.gradient-bg-welcome {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 100% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 30% 100%, rgb(89, 47, 117) 0, transparent 60%),
+    radial-gradient(at 0% 0%, rgb(8, 2, 4) 0, transparent 50%);
+}
+.gradient-bg-second {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 50%, rgb(42, 20, 81) 0, transparent 70%),
+    radial-gradient(at 100% 0%, rgb(8, 2, 4) 0, transparent 50%);
+}
+.gradient-bg-third {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 50%, rgb(54, 51, 63) 0, transparent 70%),
+    radial-gradient(at 100% 0%, rgb(8, 2, 4) 0, transparent 50%);
+}
+.gradient-bg-fourth {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 0%, rgb(8, 2, 4) 0, transparent 50%),
+    radial-gradient(at 0% 10%, rgb(198, 216, 83) 0, transparent 20%),
+    radial-gradient(at 50% 50%, rgb(54, 51, 63) 0, transparent 70%),
+    radial-gradient(at 100% 80%, rgb(126, 33, 64) 0, transparent 30%);
+}
+.gradient-bg-fifth {
+  background-color: #0f0e13;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsla(253, 16%, 7%, 1) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 0%, rgb(8, 2, 4) 0, transparent 50%),
+    radial-gradient(at 0% 10%, rgb(198, 216, 83) 0, transparent 30%),
+    radial-gradient(at 50% 100%, rgb(45, 86, 113) 0, transparent 70%);
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+@keyframes slide-opposite {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.logos {
+  position: fixed; /* Position it fixed to the viewport */
+  right: -150px; /* Margin from the right edge */
+  top: 0;
+  overflow: hidden;
+  width: 200px; /* Set a fixed width for the container */
+  height: 100vh; /* Full height of the viewport */
+  background: transparent;
+  white-space: nowrap;
+  /* z-index: 1000; Ensure it's above other content */
+}
+.logos-opposite {
+  position: fixed; /* Position it fixed to the viewport */
+  right: 150px; /* Margin from the right edge */
+  top: 0;
+  overflow: hidden;
+  width: 350px; /* Set a fixed width for the container */
+  height: 100vh; /* Full height of the viewport */
+  background: transparent;
+  white-space: nowrap;
+  /* z-index: 1000; Ensure it's above other content */
+}
+
+.logos-slide {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: 35s slide infinite linear;
+}
+.logos-slide-opposite {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: 25s slide-opposite infinite linear;
+}
+
+.logos-slide img {
+  height: 250px;
+  width: 250px;
+  margin: 40px 0;
+  display: block;
+  border: 1px solid black;
+  border-radius: 15%;
+}
+.logos-slide-opposite img {
+  height: 250px;
+  width: 250px;
+  margin: 40px 0;
+  display: block;
+  border: 1px solid black;
+  border-radius: 15%;
+}
+
+/* 
+@keyframes slide {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 0;
+  background: transparent;
+  white-space: nowrap;
+  position: relative;
+  height: 100vh;  */
+/* Set a fixed height for the container
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100px; 
+  content: "";
+  z-index: 2;
+}
+
+.logos-slide {
+  display: flex;
+  flex-direction: column;
+  animation: 3s slide infinite linear;
+  }
+  
+  .logos-slide img {
+    height: 50px;
+    margin: 40px 0;
+    display: block;
+    } */
