@@ -13,24 +13,23 @@ const Footer = () => {
           href="#"
         />
       </div>
-      <div className=" flex justify-between w-[80%] mx-[10%] items-center  text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-900 text-2xl h-[70vh]">
+      <div className=" flex flex-wrap sm:flex-nowrap justify-between w-[80%] mx-[10%] items-center  text-transparent bg-clip-text bg-gradient-to-r from-zinc-100 to-zinc-900 text-2xl h-[70vh]">
         <div>
           Dash dash terraUSD neo uniswap <br /> kadena helium avalanche polymath{" "}
           <br /> bancor.
         </div>
-        <div>
-          <div className="text-white text-xl mx-[64%] whitespace-nowrap">
+        <div className=" flex-col justify-end items-center">
+          <div className="text-white text-xl sm:mx-[60%] whitespace-nowrap">
             Looking for help ?{" "}
           </div>
-          <div className="flex justify-center items-center gap-3 w-full">
+          <div className="flex flex-wrap sm:flex-nowrap justify-center items-center gap-3 w-full">
             <input
               placeholder="Enter Your Email"
               className="bg-transparent border-4 rounded-lg border-white px-4 py-2 text-white placeholder-gray-400"
             />
-            {/* <input  placeholder="Enter Your Email" className="bg-transprent border-4 rounded-lg border-white"/> */}
             <button
               type="button"
-              class="text-white w-[10vw] h-[6vh] bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg  px-5 py-2.5 text-center text-xl me-2 mb-2"
+              class="text-white w-fit h-[6vh] bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg  px-5 py-2.5 text-center text-xl me-2 mb-2"
             >
               Submit
             </button>

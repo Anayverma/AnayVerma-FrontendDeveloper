@@ -1,6 +1,4 @@
-// DoughnutChart.js
 "use client";
-// DoughnutChart.js
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
@@ -17,11 +15,11 @@ const DoughnutChart = () => {
     ],
     datasets: [
       {
-        data: [30, 5, 35, 30], // Equal weightage
+        data: [30, 5, 35, 30], 
         backgroundColor: ["#FF8F34", "#BE2D2D", "#028DFD", "#9934FF"],
         hoverBackgroundColor: ["#FF6384", "#FDCE56", "#4BC0C0", "#36A2EB"],
-        borderWidth: 10, // Spacing between segments
-        borderColor: "rgba(0, 0, 0, 0)", // Color of the border (white in this case)
+        borderWidth: 10, 
+        borderColor: "rgba(0, 0, 0, 0)", 
       },
     ],
   };

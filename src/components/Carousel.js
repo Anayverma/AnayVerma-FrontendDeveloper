@@ -24,6 +24,7 @@ const Carousel = ({ classes, position }) => {
     <div className={`${textColor} bg-blue-400`}>
       <div
         className={`absolute right-[${pos}] top-0 overflow-hidden w-[350px] h-screen bg-transparent whitespace-nowrap`} 
+        // className={`absolute right-[70px] top-0 overflow-hidden w-[350px] h-screen bg-transparent whitespace-nowrap`} 
       >
         <div className={`${directionClass}`}>
           {repeatedImages.map((image, index) => (
