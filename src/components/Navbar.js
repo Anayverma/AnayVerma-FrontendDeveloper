@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="flex items-center gap-6">
         <div className="hidden sm:flex gap-4">
           <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-zinc-500 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+            <span className="relative text-white px-5 py-2.5 transition-all ease-in duration-75 bg-zinc-500 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
               Whitepaper
             </span>
           </button>
@@ -49,7 +49,7 @@ const Navbar = () => {
               <div className="px-4 py-2">Tokenomics</div>
               <div className="px-4 py-2">
                 <button className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
-                  <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-zinc-500 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                  <span className="relative text-white px-5 py-2.5 transition-all ease-in duration-75 bg-zinc-500 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                     Whitepaper
                   </span>
                 </button>
