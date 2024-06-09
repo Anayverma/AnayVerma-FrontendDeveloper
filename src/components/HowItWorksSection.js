@@ -6,7 +6,6 @@ const HowItWorksSection = () => {
   return (
     <div className="relative top-[100vh] h-[250vh] w-full gradient-bg-second ">
       <div className="flex flex-wrap sm:flex-nowrap justify-start items-start gap-9">
-        {/* <img src="https://i.postimg.cc/k4jhT5xh/girl.png"/> */}
 
         <Image
           src="https://i.postimg.cc/k4jhT5xh/girl.png"
@@ -18,7 +17,6 @@ const HowItWorksSection = () => {
 
         <div className="my-[8%]">
           <div className=" text-white text-5xl h-36">How it works</div>
-          {/* <div className=" text-white text-xl">Select an Avatar</div> */}
           <div className="text-5xl text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
             Select an Avatar
           </div>

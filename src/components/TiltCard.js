@@ -7,12 +7,10 @@ import {
   useSpring,
 } from "framer-motion";
 
-
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
-const TiltCard = ({image}) => {
-  
+const TiltCard = ({ image }) => {
   const ref = useRef(null);
 
   const x = useMotionValue(0);
@@ -64,13 +62,13 @@ const TiltCard = ({image}) => {
         }}
         className="absolute inset-4 grid place-content-center rounded-xl bg-transparent shadow-lg"
       >
-        {/* <FiMousePointer
-          style={{
-            transform: "translateZ(75px)",
-          }}
-          className="mx-auto text-4xl"
-        /> */}
-       <img src={image=="1"?"https://i.postimg.cc/tgGmYWgb/text3d.png":"https://i.postimg.cc/5ySMf079/Screenshot-2024-06-09-at-11-13-28-AM.png"}/>
+        <img
+          src={
+            image == "1"
+              ? "https://i.postimg.cc/tgGmYWgb/text3d.png"
+              : "https://i.postimg.cc/5ySMf079/Screenshot-2024-06-09-at-11-13-28-AM.png"
+          }
+        />
       </div>
     </motion.div>
   );

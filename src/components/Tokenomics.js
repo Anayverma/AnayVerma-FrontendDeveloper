@@ -83,8 +83,8 @@ const Tokenomics = () => {
               </svg>
             </span>
             <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-              <span className="text-white mr-16 md: "> Partnership </span> :
-              5% token
+              <span className="text-white mr-16 md: "> Partnership </span> : 5%
+              token
             </span>
           </a>
           <a
@@ -213,11 +213,8 @@ ease-out duration-200"
               </svg>
             </span>
             <span className="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
-              <span className="text-white mr-36 sm:mr-16">
-                {" "}
-                BNB LP Pool
-              </span>{" "}
-              : 30% token
+              <span className="text-white mr-36 sm:mr-16"> BNB LP Pool</span> :
+              30% token
             </span>
           </a>
         </div>

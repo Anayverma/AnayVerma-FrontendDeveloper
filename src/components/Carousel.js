@@ -7,7 +7,7 @@ import {
 
 const Carousel = ({ classes, position }) => {
   const textColor = classes === "white" ? "text-white" : "text-blue-900";
-  
+
   const pos = position === "1" ? "0px" : position === "2" ? "183px" : "420px";
   const images =
     position === "1"

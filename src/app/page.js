@@ -17,39 +17,19 @@ export default function Home() {
   return (
     <main className="h-[200vh] w-[100vw] overflow-x-clip gradient-bg-welcome">
       <Navbar />
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={sectionVariants}
-      >
+      <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
         <HeroSection />
       </motion.div>
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={sectionVariants}
-      >
+      <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
         <Text3d />
       </motion.div>
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={sectionVariants}
-      >
+      <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
         <HowItWorksSection />
       </motion.div>
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={sectionVariants}
-      >
+      <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
         <Tokenomics />
       </motion.div>
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={sectionVariants}
-      >
+      <motion.div initial="hidden" animate="visible" variants={sectionVariants}>
         <RoadMap />
       </motion.div>
       <Footer />

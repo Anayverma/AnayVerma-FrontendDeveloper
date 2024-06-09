@@ -6,8 +6,8 @@ const HeroSection = () => {
     <div className="absolute w-full h-[100vh] flex flex-col justify-center items-center md:items-start">
       <div className="hidden md:block w-full">
         <Carousel classes="white" position="1" />
-         <Carousel classes="white" position="2" />
-        <Carousel classes="white" position="3" /> 
+        <Carousel classes="white" position="2" />
+        <Carousel classes="white" position="3" />
       </div>
       <div className="text-center md:text-left">
         <div className="relative w-[80%]  inline-flex md:top-[15px] md:left-[175px] mt-6">

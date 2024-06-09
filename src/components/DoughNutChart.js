@@ -15,11 +15,11 @@ const DoughnutChart = () => {
     ],
     datasets: [
       {
-        data: [30, 5, 35, 30], 
+        data: [30, 5, 35, 30],
         backgroundColor: ["#FF8F34", "#BE2D2D", "#028DFD", "#9934FF"],
         hoverBackgroundColor: ["#FF6384", "#FDCE56", "#4BC0C0", "#36A2EB"],
-        borderWidth: 10, 
-        borderColor: "rgba(0, 0, 0, 0)", 
+        borderWidth: 10,
+        borderColor: "rgba(0, 0, 0, 0)",
       },
     ],
   };

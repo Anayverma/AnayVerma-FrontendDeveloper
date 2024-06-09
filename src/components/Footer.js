@@ -1,5 +1,4 @@
 "use client";
-import { useMotionValue, motion, useSpring, useTransform } from "framer-motion";
 import React, { useRef } from "react";
 import Linker from "@/components/Linker";
 import { FaTwitter, FaLinkedin, FaTiktok, FaYoutube } from "react-icons/fa";
