@@ -7,9 +7,8 @@ import {
 
 const Carousel = ({ classes, position }) => {
   const textColor = classes === "white" ? "text-white" : "text-blue-900";
-  const pos =
-    position === "1" ? "-200px" : position === "2" ? "70px" : "340px";
-  console.log(pos);
+  
+  const pos = position === "1" ? "0px" : position === "2" ? "183px" : "420px";
   const images =
     position === "1"
       ? imageLinkCarsouel1
@@ -19,12 +18,19 @@ const Carousel = ({ classes, position }) => {
 
   const repeatedImages = [...images, ...images];
   const directionClass =
-    position == "2" ? "logos-slide-opposite" : "logos-slide";
+    position === "2" ? "logos-slide-opposite" : "logos-slide";
+  const width = position === "1" ? "150px" : "200px";
+
+  console.log({ pos, width, directionClass });
+
   return (
-    <div className={`${textColor} bg-blue-400`}>
+    <div className={`${textColor} bg-transparent`}>
       <div
-        className={`absolute right-[${pos}] top-0 overflow-hidden w-[350px] h-screen bg-transparent whitespace-nowrap`} 
-        // className={`absolute right-[70px] top-0 overflow-hidden w-[350px] h-screen bg-transparent whitespace-nowrap`} 
+        style={{
+          right: pos,
+          width: width,
+        }}
+        className={`absolute top-0 overflow-hidden h-screen bg-transparent whitespace-nowrap`}
       >
         <div className={`${directionClass}`}>
           {repeatedImages.map((image, index) => (

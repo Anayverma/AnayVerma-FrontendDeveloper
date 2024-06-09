@@ -42,7 +42,7 @@ const Tokenomics = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center w-[90%] md:w-[80%]  md:gap-0 mt-10 md:mt-0">
+      <div className="flex flex-col md:flex-row justify-center items-center w-[90%] md:w-[80%]  md:gap-16 mt-10 md:mt-0">
         <DoughnutChart />
         <div className="">
           <a
